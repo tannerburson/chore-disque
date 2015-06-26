@@ -14,7 +14,7 @@ module Chore::Queues::Disque
 
     def publish(queue_name,job)
       ## Make timeout configurable
-      disque.push(queue_name,encode_job(job),1000)
+      disque.push(queue_name,encode_job(job),1000, retry: 5000)
     end
 
     private

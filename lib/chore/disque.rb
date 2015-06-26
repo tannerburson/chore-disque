@@ -1,6 +1,6 @@
 require "chore/disque/version"
-require 'chore/queues/consumer'
-require 'chore/queues/publisher'
+require 'chore/queues/disque/consumer'
+require 'chore/queues/disque/publisher'
 
 module Chore
   module Disque
